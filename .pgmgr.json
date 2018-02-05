@@ -1,0 +1,12 @@
+{
+  "host": "localhost",
+  "port": 5432,
+  "username": "postgres",
+  "password": "postgres",
+  "database": "brevity_development",
+  "migration-table": "public.schema_migrations",
+  "migration-folder": "db/migrations",
+  "dump-file": "etc/db/dump.sql",
+  "column-type": "string",
+  "format": "unix"
+}
