@@ -1,0 +1,22 @@
+{{- define "mychart.env" -}}
+- {{ template "common.envvar.value" (list "APP_ENV" .Values.app.env )}}
+- {{ template "common.envvar.value" (list "APP_PORT" .Values.app.port )}}
+- {{ template "common.envvar.value" (list "APP_DOMAIN" .Values.app.domain )}}
+- {{ template "common.envvar.value" (list "APP_TOKEN_LENGTH" .Values.app.tokenLength )}}
+- {{ template "common.envvar.value" (list "PG_HOST" .Values.db.host )}}
+- {{ template "common.envvar.value" (list "PG_PORT" .Values.db.port )}}
+- {{ template "common.envvar.value" (list "PG_USER" .Values.db.user )}}
+- {{ template "common.envvar.value" (list "PG_PASSWORD" .Values.db.password )}}
+- {{ template "common.envvar.value" (list "PG_DATABASE" .Values.db.database )}}
+- {{ template "common.envvar.value" (list "PG_SSL_MODE" .Values.db.sslMode )}}
+- {{ template "common.envvar.value" (list "PGMGR_HOST" .Values.db.host )}}
+- {{ template "common.envvar.value" (list "PGMGR_PORT" .Values.db.port )}}
+- {{ template "common.envvar.value" (list "PGMGR_USERNAME" .Values.db.user )}}
+- {{ template "common.envvar.value" (list "PGMGR_PASSWORD" .Values.db.password )}}
+- {{ template "common.envvar.value" (list "PGMGR_DATABASE" .Values.db.database )}}
+- {{ template "common.envvar.value" (list "PGMGR_SSLMODE" .Values.db.sslMode )}}
+- {{ template "common.envvar.value" (list "PGMGR_DUMP_FILE" .Values.db.pgmgrDumpFile )}}
+- {{ template "common.envvar.value" (list "PGMGR_COLUMN_TYPE" .Values.db.pgmgrColumnType )}}
+- {{ template "common.envvar.value" (list "PGMGR_MIGRATION_TABLE" .Values.db.pgmgrMigrationTable )}}
+- {{ template "common.envvar.value" (list "PGMGR_MIGRATION_FOLDER" .Values.db.pgmgrMigrationFolder )}}
+{{- end -}}

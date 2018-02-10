@@ -1,0 +1,5 @@
+{{- template "common.ingress" (list . "mychart.ingress") -}}
+{{- define "mychart.ingress" -}}
+spec:
+  tls: []
+{{- end -}}

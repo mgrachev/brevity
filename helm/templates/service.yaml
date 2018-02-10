@@ -1,0 +1,8 @@
+{{- template "common.service" (list . "brevity.service") -}}
+{{- define "brevity.service" -}}
+spec:
+  ports:
+    - name: http
+      port: 80
+      targetPort: http
+{{- end -}}

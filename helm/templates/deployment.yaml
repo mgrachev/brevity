@@ -1,0 +1,25 @@
+{{- template "common.deployment" (list . "brevity.deployment") -}}
+{{- define "brevity.deployment" -}}
+spec:
+  replicas: {{ .Values.replicaCount }}
+  template:
+    spec:
+      initContainers:
+      - {{ template "common.container" (list . "brevity.deployment.init.container") }}
+      containers:
+      - {{ template "common.container" (list . "brevity.deployment.container") }}
+{{- end -}}
+
+{{- define "brevity.deployment.init.container" -}}
+name: {{ .Chart.Name }}-init-db
+image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+command: ['/app/pgmgr', 'db', 'migrate', '||', 'true']
+env:
+{{ template "mychart.env" . }}
+{{- end -}}
+
+{{- define "brevity.deployment.container" -}}
+name: {{ .Chart.Name }}
+env:
+{{ template "mychart.env" . }}
+{{- end -}}
