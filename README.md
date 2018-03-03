@@ -3,6 +3,14 @@ Another useless service for shortening links :trollface:
 
 ## Install
 
+### Kubernetes cluster
+
+* [https://hype.codes/docker-mac-and-kubernetes](https://hype.codes/docker-mac-and-kubernetes) (English)
+
+* [http://www.mgrachev.com/2018/02/26/docker-for-mac-and-kubernetes](http://www.mgrachev.com/2018/02/26/docker-for-mac-and-kubernetes) (Russian)
+
+### Locally
+
 Clone the repository:
 
 ```bash
