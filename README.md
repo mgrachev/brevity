@@ -7,7 +7,7 @@ Another useless service for shortening links :trollface:
 
 * [https://hype.codes/docker-mac-and-kubernetes](https://hype.codes/docker-mac-and-kubernetes) (English)
 
-* [http://www.mgrachev.com/2018/02/26/docker-for-mac-and-kubernetes](http://www.mgrachev.com/2018/02/26/docker-for-mac-and-kubernetes) (Russian)
+* [https://www.mgrachev.com/2018/02/26/docker-for-mac-and-kubernetes](https://www.mgrachev.com/2018/02/26/docker-for-mac-and-kubernetes) (Russian)
 
 ### Locally
 
